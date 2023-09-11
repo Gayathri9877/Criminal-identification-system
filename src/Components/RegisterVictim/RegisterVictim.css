@@ -1,0 +1,232 @@
+.body {
+    font-family: Arial, sans-serif; /* Change the font family as needed */
+    font-size: 16px; /* Change the font size as needed */
+  }
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    background-size: cover;
+    margin-top: 20px;
+  }
+  
+  .registration-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color:white;
+    padding: 2rem;
+    border-radius: 0px;
+    width: 50%;
+    min-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+  
+  .label {
+    
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    background-color: #dfe1fc;
+    transition: background-color 0.3s;
+  }
+  
+  .input:focus {
+    outline: none;
+    background-color: #e0e1fc;
+  }
+  
+  .btn {
+    background-color: navy!important;
+    color: white !important;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color:white;
+  }
+  .p1{
+    color: black;
+    font-weight: bold;
+  }
+
+
+  .remove-button,
+  .add-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%; /* Make buttons take the full width of the container */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  .remove-button{
+    background-color: red;
+    color: white;
+    width: auto;
+  }
+  .add-button{
+    background-color: navy;
+    color: white;
+    width: auto;
+  }
+  .icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px; /* Adjust the width and height as needed */
+    border-radius: 50%;
+    background-color: inherit; /* Inherit the background color from the parent (the button) */
+    border: 2px solid white; /* White border with 3px width */
+    color: white; /* Text color */
+    font-weight: bold; /* Make the text bold */
+    font-size: 12px; /* Adjust the font size as needed */
+    margin-right: 5px; /* Add some spacing between the circle and text */
+  }
+  
+  
+  
+  .icon-circle span {
+    color: white;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-direction: row; /* Display buttons in a row */
+    justify-content: flex-end; /* Move buttons to the right side */
+    gap: 140px; /* Adjust the gap between buttons */
+    margin-top: 20px;
+  }
+  
+.button-container{
+    align-items: end;
+
+}
+.photo-preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between photos */
+  flex-direction: row-reverse; /* Reverse the order of photos within the row */
+}
+
+.photo-preview img {
+  
+  width: 300px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  
+}
+.photo-preview .photo-cell.selected {
+    border: 2px solid #007bff; /* Add a border around the selected photo */
+    border-radius: 0%;
+    background-color: white;
+    width: auto; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+.radio-group {
+    display: flex !important;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 1%;
+    gap: 70px; /* Adjust the gap between radio buttons and text boxes */
+        
+      
+    
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    
+  }
+  
+  .ale {
+    font-size: small;
+    color: black;
+    margin-left: 5px;
+  }
+  
+  /* Add this class to adjust spacing between buttons */
+  .radio-label + .radio-label {
+    margin-left: 5px; /* Adjust the spacing between radio buttons */
+    margin-right: 80%;
+  }
+  
+  /* Increase space between label and first button */
+  .radio-group > p {
+    margin-right: 70px; /* Adjust the space between label and first button */
+  }
+  .inc{
+    margin-right: 3%;
+  }
+/* Change the color of the radio button outer circle */
+  input[type="radio"] {
+    appearance: none; /* Hide the default radio button */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid lavender; /* Default outer circle color */
+    border-radius: 50%; /* Make it a circle */
+    outline: none;
+    margin-right: 5px; /* Adjust spacing between radio button and label */
+  }
+  
+  /* Change the color of the inner radio button dot when selected */
+  input[type="radio"]:checked {
+    
+    border-color:navy; /* Change outer circle color when selected */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Customize the inner dot appearance */
+  input[type="radio"]:checked::before {
+    /* Unicode character for a bullet point */
+    display: block;
+    content:normal;
+    width: 10px;
+    height: 10px;
+    background-color:lavender; /* Color of the inner dot */
+    border-radius: 50%; /* Make it a circle */
+    margin: 2px; /* Position the inner dot within the outer circle */
+  }
+  
+  .large-input {
+    width: 100%; /* Set the width to 100% to make it full-width */
+    height: 150px; /* Adjust the height as needed */
+    resize: vertical; /* Allow vertical resizing */
+    padding: 0.5rem; /* Add padding to the input field */
+    border: 1px solid #E0E1FC; /* Add a border for clarity */
+    background-color: #E0E1FC; /* Set the background color */
+    transition: background-color 0.3s;
+  }

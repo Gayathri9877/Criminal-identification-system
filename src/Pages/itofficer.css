@@ -1,0 +1,31 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 0;
+    padding: 0px;
+  }
+
+  .foot1{
+    margin-top: 9.5%;
+   
+  }
+  .photo-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  
+  .photo-preview img {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .photo-input {
+    border-radius: 0px }

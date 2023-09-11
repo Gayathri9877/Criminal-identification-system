@@ -1,0 +1,109 @@
+.persona-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .picture-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .picture-section img {
+    width: 100% !important;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  
+  .details-section {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-right: 15px;
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: left;
+    margin: 10px 0;
+    color: ash;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .bio-service {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .bio,
+  .service {
+    text-align: center;
+    width:auto;/* Equal width for bio and service */
+    flex: 1;
+    
+    
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content:left;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .third-section {
+    flex: 1;
+    display: flex;
+    width: 10%;
+  }
+  
+  .navy-blue-part {
+    flex: 2;
+    background-color: #003366; /* Navy blue background */
+    border-radius: 0px 20px 20px 0px;
+    width: 50%; 
+  }
+  
+
+ 
+  .second-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  
+  
+  
+  .bio h4,
+  .services h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    
+  }
+  .bio p,
+  .services p{
+    text-align: left;
+  }
+  .persona-container {
+    display: flex;
+  }
+  
+  
+
+  
